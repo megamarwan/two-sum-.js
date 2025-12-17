@@ -1,0 +1,14 @@
+var twoSum = function(nums, target) {
+    const pairIdx = {};
+
+    for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        if (target - num in pairIdx) {
+            return [i, pairIdx[target - num]];
+        }
+        pairIdx[num] = i;
+    }    
+};
+
+// Quick test run
+console.log(twoSum([5,7,11,4], 9)); // expected [1,0]
