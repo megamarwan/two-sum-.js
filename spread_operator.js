@@ -7,3 +7,4 @@ return arr2;
     }
     console.log(printArray(...array));
     const x = Window.prompt("Enter a number: ");
+    document.getElementById('demo').textContent = printArray(array);
