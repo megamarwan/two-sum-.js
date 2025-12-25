@@ -17,7 +17,7 @@ ulElements.forEach(ulElement => {
 
 // ---------- .lastElementChild ----------
 
-const ulElements = document.querySelectorAll("ul");
+const ulElements1 = document.querySelectorAll("ul");
 
 ulElements.forEach(ulElement => {
     const lastChild = ulElement.lastElementChild;
@@ -26,25 +26,25 @@ ulElements.forEach(ulElement => {
 
 // ---------- .nextElementSibling ----------
 
-const element = document.getElementById("vegetables");
+const element1 = document.getElementById("vegetables");
 const nextSibling = element.nextElementSibling;
 nextSibling.style.backgroundColor = "yellow";
 
 // ---------- .previousElementSibling ----------
 
-const element = document.getElementById("desserts");
+const element2 = document.getElementById("desserts");
 const prevSibling = element.previousElementSibling;
 prevSibling.style.backgroundColor = "yellow";
 
 // ---------- .parentElement ----------
 
-const element = document.getElementById("ice cream");
+const element3 = document.getElementById("ice cream");
 const parent = element.parentElement;
 parent.style.backgroundColor = "yellow";
 
 // ---------- .children ----------
 
-const element = document.getElementById("fruits");
+const element4 = document.getElementById("fruits");
 const children = element.children;
 
 Array.from(children).forEach(child => {
